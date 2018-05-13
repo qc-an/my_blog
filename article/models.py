@@ -11,7 +11,7 @@ class Article(models.Model) :
     content = models.TextField(blank = True, null = True)
 #content
 
-    def _str_(self) :
+    def __str__(self) :
         return self.title
     
     class Meta:
